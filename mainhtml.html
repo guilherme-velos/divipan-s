@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divipan's</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+          <a class="logo1" href="/">Divipan</a>
+          <div class="mobile-menu1">
+              <div class="line11"></div>
+              <div class="line21"></div>
+              <div class="line31"></div>
+          </div>
+          <ul class="nav-list1">
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#localizacao">Localização</a></li>
+              <li><a href="#contato">Contato</a></li>
+          </ul>
+      </nav>
+  </header>
+  
+    <main>
+      <!-- Seção Início -->
+      <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Bem-vindo à <span>Divipa's</span></h1>
+            <p>Onde o sabor e a tradição se encontram.</p>
+            <button class="cta-button">Conheça nossos produtos</button>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+    
+
+      <!-- Seção Sobre -->
+      <section id="sobre" class="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>Sobre Nós</h2>
+                <p>
+                    Há mais de 20 anos, a <strong>Divipa's</strong> oferece pães fresquinhos, doces irresistíveis 
+                    e atendimento de qualidade. Nossa missão é proporcionar momentos de alegria e sabor 
+                    para você e sua família, com receitas que preservam a tradição e um toque de inovação.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="Slide6.jpg" alt="Interior da Padaria Divipa's">
+            </div>
+        </div>
+    </section>
+    
+
+      <!-- Seção Produtos -->
+      <section id="produtos" class="products">
+        <div class="products-header">
+            <h2>Nossos Produtos</h2>
+            <p>Explore nossa variedade de delícias feitas com amor e tradição.</p>
+        </div>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="paofrancesfolhado.jpg" alt="Pão Francês">
+                <div class="product-info">
+                    <h3>Pão Francês</h3>
+                    <p>Crocante por fora e macio por dentro.</p>
+                    <button class="btn-detalhes" data-name="Pão Francês" data-desc="O clássico pão francês, perfeito para qualquer momento." data-img="exemplo-pao.jpg">Ver Mais</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="bolo_kitkat-3-1280x720.jpg" alt="Bolo de Chocolate"> 
+                <div class="product-info">
+                    <h3>Bolos</h3>
+                    <p>Para todas as ocasiões, feitos com amor.</p>
+                    <button class="btn-detalhes" data-name="Bolos" data-desc="Bolos fofos e saborosos, ideais para celebrações." data-img="exemplo-bolo.jpg">Ver Mais</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="Cupcake-de-doce-de-leite.webp" alt="Doces">
+                <div class="product-info">
+                    <h3>Doces</h3>
+                    <p>Sabores que derretem na boca.</p>
+                    <button class="btn-detalhes" data-name="Doces" data-desc="Uma variedade de doces irresistíveis que encantam." data-img="exemplo-doce.jpg">Ver Mais</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal para detalhes do produto -->
+        <div class="product-modal" id="product-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <img src="" alt="" id="modal-img">
+                <h3 id="modal-title"></h3>
+                <p id="modal-desc"></p>
+            </div>
+        </div>
+    </section>
+    
+
+      <!-- Seção Localização -->
+      <section id="localizacao" class="location">
+        <div class="location-content">
+            <h2>Onde Estamos</h2>
+            <p>Venha nos visitar! Estamos localizados no coração da cidade.</p>
+            <div class="map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.9276966016087!2d-48.06610342407541!3d-16.017278928484377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93598153339a343b%3A0xaa3555aa1c54ac55!2sDivipan!5e0!3m2!1spt-PT!2sbr!4v1732732141280!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contato" class="contact">
+        <div class="contact-content">
+            <h2>Fale Conosco</h2>
+            <p>Entre em contato e descubra mais sobre nossos produtos e serviços.</p>
+            <form class="contact-form">
+                <input type="text" name="nome" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Email" required>
+                <textarea name="mensagem" placeholder="Sua Mensagem" rows="5" required></textarea>
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Divipa's - Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="mobile-navbar.js"></script>
+  </body>
+</html>
